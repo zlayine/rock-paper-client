@@ -1,5 +1,5 @@
 <template>
-  <div class="m-auto flex flex-col text-center relative" >
+  <div class="m-auto flex flex-col text-center relative">
     <div
       class="text-white font-bold text-lg text-center uppercase"
       v-if="status === 2"
@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   status: number;
 }>();
 

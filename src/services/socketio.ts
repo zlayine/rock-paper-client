@@ -9,7 +9,7 @@ class SocketioService {
 
   init() {
     return new Promise((resolve) => {
-      this.socket = io('http://localhost:3000');
+      this.socket = io(import.meta.env.VITE_SOCKETIO_URL);
       this.socket.on('connect', () => {
         resolve('connected');
       });

@@ -156,11 +156,11 @@ const joinChannel = () => {
   SocketioService.joinChannel(route.params.id.toString());
 };
 
-const disconnect = () => {
-  SocketioService.leaveChannel();
-  resetValues();
-  step.value = 0;
-};
+// const disconnect = () => {
+//   SocketioService.leaveChannel();
+//   resetValues();
+//   step.value = 0;
+// };
 
 (async () => {
   initSocket();
